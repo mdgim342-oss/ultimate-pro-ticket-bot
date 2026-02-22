@@ -236,7 +236,7 @@ bot.action('not_helpful', (ctx) => {
 // bot.launch();
 
 // প্রোডাকশনে ওয়েবহুক ব্যবহার করুন [citation:4]
-bot.telegram.setWebhook(`https://${process.env.RENDER_EXTERNAL_URL}/webhook/${BOT_TOKEN}`);
+bot.setWebHook(`${process.env.RENDER_URL}/bot${process.env.BOT_TOKEN}`);
 
 // ========== সার্ভার স্টার্ট ==========
 app.listen(PORT, () => {
